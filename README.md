@@ -1,3 +1,5 @@
 # MULTISKILLS repository
 
-Cool stuff is coming soon... ;)
+Cool stuff is coming soon...
+
+Stay tuned ;)
