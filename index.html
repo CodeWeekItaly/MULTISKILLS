@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOCommerce</title>
+    <!-- bootstrap import -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <main>
+        <div id="main-box">
+            <h1 id="title">IOCommerce</h1>
+            <h2 id="subtitle">Buy from home, by locals.</h2>
+
+            <div id="welcome-menu" class="flexed ">
+                <button id="login" onclick="loginPressed()">Login</button>
+                <button id="register" onclick="registerPressed()"">Register</button>
+            </div>    
+            
+            <div id="register-menu" class="flexed hide">
+                <p>Sei una persona o un'attività?</p>
+                <div id="profile-selection">
+                    <div class="panel">
+                        <img src="imgs/user.png" alt="Persona">
+                        <button id="user" onclick="">Persona</button>
+                    </div>
+                    <div class="panel">
+                        <img src="imgs/company.png" alt="Persona">
+                        <button id="activity" onclick="">Attività</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="login-menu" class="flexed hide">
+                <p>Inserisci i tuoi dati.</p>
+                <form action="#">
+                    <input type="email" name="La tua email" id="user-email" placeholder="Inserisci email..."><br>
+                    <input type="password" name="user-password" id="user-password" placeholder="Inserisci password..."><br>
+                    <button>Accedi!</button> <a href="#">Hai dimenticato la password?</a>
+                </form>
+            </div>
+
+            <div id="company-register" class="flexed hide">
+                <p>Inserisci i tuoi dati.</p>
+                <form action="#">
+                    <input type="text" placeholder="Inserisci il nome dell'azienda" id="company-name"><br>
+                    <input type="email" name="La tua email" id="user-email" placeholder="Inserisci email..."><br>
+                    <input type="password" name="user-password" id="user-password" placeholder="Inserisci password...">
+                    <button>Registra la tua azienda!</button>
+                </form>
+            </div>
+
+            <div id="user-register" class="flexed hide">
+                <p>Inserisci i tuoi dati.</p>
+                <form action="#">
+                    <input type="text" placeholder="Inserisci il nome dell'azienda" id="company-name"><br>
+                    <input type="email" name="La tua email" id="user-email" placeholder="Inserisci email..."><br>
+                    <input type="password" name="user-password" id="user-password" placeholder="Inserisci password...">
+                    <button>Registrati!</button>
+                </form>
+            </div>            
+
+            <button id="go-back" class="hide">Torna indietro...</button>
+
+            <a href="home.html">porta pippo a casa</a>
+
+        <div>
+    </main>
+
+    
+    <script src="script.js"></script>
+  </body>
+
+</html>
