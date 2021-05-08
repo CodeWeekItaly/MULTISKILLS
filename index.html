@@ -10,69 +10,68 @@
   </head>
 
   <body>
+      <main>
+        <div id="panel">
+            <h1>IO<span class="lighter-please">commerce</span></h1>
+            <h2>buy from home, buy local.</h2>
+      
+            <div id="sell-or-buy" class="">
+                <p class="description">
+                    IOcommerce is an online store that allows
+                    you to <span class="green-please">buy</span>
+                    and <span class="green-please">sell</span>
+                    foods that are produced
+                    near to your location!
+                </p>
 
-    <main>
-        <div id="main-box">
-            <h1 id="title">IOCommerce</h1>
-            <h2 id="subtitle">Buy from home, by locals.</h2>
+                <a id="buy" class="nice-button" href="#" onclick="buyerLog()">BUY</a>
+                <span class="smaller-please">or</span>
+                <a id="sell" class="nice-button" href="#" onclick="sellerLog()">SELL</a>
 
-            <div id="welcome-menu" class="flexed ">
-                <button id="login" onclick="loginPressed()">Login</button>
-                <button id="register" onclick="registerPressed()"">Register</button>
-            </div>    
-            
-            <div id="register-menu" class="flexed hide">
-                <p>Sei una persona o un'attività?</p>
-                <div id="profile-selection">
-                    <div class="panel">
-                        <img src="imgs/user.png" alt="Persona">
-                        <button id="user" onclick="">Persona</button>
-                    </div>
-                    <div class="panel">
-                        <img src="imgs/company.png" alt="Persona">
-                        <button id="activity" onclick="">Attività</button>
-                    </div>
-                </div>
+                <span id="is-signed-in">Already signed in? <a class="green-please" href="#"> Log in.</a></span> 
+
             </div>
 
-            <div id="login-menu" class="flexed hide">
-                <p>Inserisci i tuoi dati.</p>
-                <form action="#">
-                    <input type="email" name="La tua email" id="user-email" placeholder="Inserisci email..."><br>
-                    <input type="password" name="user-password" id="user-password" placeholder="Inserisci password..."><br>
-                    <button>Accedi!</button> <a href="#">Hai dimenticato la password?</a>
+            <div id="register-buyer" class="hide">
+                <h3 class="green-please">Signin up on IOcommerce as a buyer</h3>
+                <form action="/">
+                    <label for="buyer-fname">Your first name</label>
+                    <input type="text" name="buyer-fname" id="buyer-fname" placeholder="John">
+                    <label for="buyer-lname">Your last name</label>
+                    <input type="text" name="buyer-lname" id="buyer-lname" placeholder="Appleseed">
+                    <label for="buyer-email">Your e-mail</label>
+                    <input type="email" name="buyer-email" id="buyer-email" placeholder="john.appleseed@something.com">
+                    <label for="buyer-password">Your password</label>
+                    <input type="password" name="buyer-pasword" id="buyer-password" placeholder="I bet it could be 'password123'">
+                    <label for="buyer-city">Your city</label>
+                    <input type="text" name="buyer-city" id="buyer-city" placeholder="Milan">
+                    <button id="buyer-signup" class="nice-button">Register</button>
                 </form>
+
+                <a id="back-previous-page" href="#" onclick="resetIndex()">&lt;&lt; Go back to previous page</a>
             </div>
 
-            <div id="company-register" class="flexed hide">
-                <p>Inserisci i tuoi dati.</p>
-                <form action="#">
-                    <input type="text" placeholder="Inserisci il nome dell'azienda" id="company-name"><br>
-                    <input type="email" name="La tua email" id="user-email" placeholder="Inserisci email..."><br>
-                    <input type="password" name="user-password" id="user-password" placeholder="Inserisci password...">
-                    <button>Registra la tua azienda!</button>
+            <div id="register-seller" class="sign-user hide">
+                <h3 class="green-please">Signing up on IOcommerce as a seller</h3>
+                <form action="/">
+                    <label for="buyer-fname">Your first name</label>
+                    <input type="text" name="buyer-fname" id="buyer-fname" placeholder="John">
+                    <label for="buyer-lname">Your last name</label>
+                    <input type="text" name="buyer-lname" id="buyer-lname" placeholder="Appleseed">
+                    <label for="buyer-email">Your e-mail</label>
+                    <input type="email" name="buyer-email" id="buyer-email" placeholder="john.appleseed@something.com">
+                    <label for="buyer-password">Your password</label>
+                    <input type="password" name="buyer-pasword" id="buyer-password" placeholder="I bet it could be 'password123'">
+                    <label for="buyer-city">Your city</label>
+                    <input type="text" name="buyer-city" id="buyer-city" placeholder="Milan">
+                    <button id="buyer-signup" class="nice-button">Register</button>
                 </form>
+
+                <a id="back-previous-page" href="#" onclick="resetIndex()">&lt;&lt; Go back to previous page</a>
             </div>
 
-            <div id="user-register" class="flexed hide">
-                <p>Inserisci i tuoi dati.</p>
-                <form action="#">
-                    <input type="text" placeholder="Inserisci il nome dell'azienda" id="company-name"><br>
-                    <input type="email" name="La tua email" id="user-email" placeholder="Inserisci email..."><br>
-                    <input type="password" name="user-password" id="user-password" placeholder="Inserisci password...">
-                    <button>Registrati!</button>
-                </form>
-            </div>            
-
-            <button id="go-back" class="hide">Torna indietro...</button>
-
-            <a href="home.html">porta pippo a casa</a>
-
-        <div>
-    </main>
-
-    
+        </div>
+      </main>
     <script src="script.js"></script>
   </body>
-
 </html>

@@ -1,90 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html {
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+    color: white;
+}
 
 body {
-    font-family: 'Lato', sans-serif;
-    color: #22577A;
-    background-color: #22577A;
-    margin: 0;
-    padding: 0;
+    background-image: url('imgs/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 
 main {
     display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-}
-
-#title {
-    margin-bottom: 3px;
-}
-
-#subtitle {
-    margin-top: 3px;
-    font-size: 1.2em;
-}
-
-#main-box {
-    background-color: #E3FFE6;
-    width: 80%;
-    height: 60%;
-    border-radius: 10px;
-	padding: 15px 25px;
-	width: 100%;
-	max-width: 960px;
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-.flexed {
-    display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-#login, #register{
-    width: 35%;
-    border: none;
-    border-radius: 8px;
-    margin: 5px auto;
-    font-size: 1.4em;
-}
-
-#login {
-    background-color: #80ED99;
-}
-
-#register {
-    background-color: #6bcf82;
-}
-
-#go-back {
-    background-color: #C7F9CC;
-}
-
-#profile-selection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.panel {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
-}
-
-.panel img {
-    width: 250px;
-    height: 250px;
-    border: 4px solid black;
-    border-radius: 100%;
+    height: 100vh;
 }
 
 .hide {
     display: none !important;
+}
+
+#panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    border-radius: 50px;
+    background-color: #000000ab;
+
+    width: 500px;
+
+    font-size: 1.25em;
+
+    box-shadow: 5px 5px 25px black;
+    backdrop-filter: blur(5px);
+    
+}
+
+#sell-or-buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#panel h1 {
+    color: #64A11E;
+    margin-bottom: 0;
+    font-size: 3.5em;
+}
+
+#panel h2 {
+    margin-top: 0;
+}
+
+#panel p {
+    text-align: center;
+    margin: 0 14%;
+    font-weight: 600;
+}
+
+.nice-button {
+    border-radius: 50px;
+    padding: 15px 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700 !important;
+    margin: 5px;
+    width: 216px;
+    text-align: center;
+}
+
+#buy {
+    background-image: linear-gradient(to right, #64A11E, #8AC24A);
+}
+
+#sell {
+    background-image: linear-gradient(to right, #00294D, #001425);
+    margin-bottom: 35px !important;
+}
+
+.description {
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.lighter-please {
+    font-weight: 400;
+}
+
+.smaller-please {
+    font-size: 0.65em;
+}
+
+.green-please {
+    color: #64A11E;
+}
+
+label {
+    font-size: 0.85em;
+    margin-top: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+input[type=text], input[type=password],
+input[type=email] {
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 50px;
+    border: none;
+    width: 225px;
+    padding: 5px 8px;
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder,
+input[type=email]::placeholder {
+    color: #181818;
+}
+
+
+#is-signed-in {
+    margin-bottom: 35px;
+}
+
+#is-signed-in a{
+    font-weight: 700;
+}
+
+#buyer-signup {
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to right, #64A11E, #8AC24A);
+    border: none;
+    font-size: 20px;
+    font-weight: 700 !important;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#register-buyer {
+    text-align: center;
+    margin-bottom: 30px !important;
+}
+
+#back-previous-page {
+    background: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
 }

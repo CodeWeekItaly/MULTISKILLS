@@ -11,7 +11,7 @@ body {
 
 #nav_bar {
     display: flex;
-    height: 90%;
+    height: 50px;
     background-color: #6ae787;
     justify-items: start;
     align-items: center;
@@ -39,4 +39,19 @@ a {
     color: white;
     font-family: 'Lato', sans-serif;
     margin-left: 5px;
+}
+
+#search_textbox {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    height: 50%
+}
+
+#user_welcome_title {
+    font-family: "Calibri Light";
+    font-size: 40px;
+    margin-top: 2%;
+    text-align: center;
 }
