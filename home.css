@@ -68,6 +68,26 @@ main h2 {
     width: 450px;
 }
 
+.navbar li {
+    display: inline;
+}
+
+.navbar #icons {
+    float: right;
+}
+
+.navbar #logo {
+    font-size: 1.5em;
+    margin-right: 50px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
 #closest-product {
     height: 100%;
     
@@ -140,4 +160,14 @@ main h2 {
     color: #64A11E;
     font-weight: 800;
     padding-top: 25px;
+}
+
+@media (max-width: 885px) {
+    #info-section {
+        flex-direction: column;
+    }
+
+    #search-field {
+        display: none;
+    }
 }

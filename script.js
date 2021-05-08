@@ -38,7 +38,7 @@ function resetIndex()
 
 }
 
-function redirectHome() {
+function redirectpls() {
   window.location.replace("home.html")
 }
 
