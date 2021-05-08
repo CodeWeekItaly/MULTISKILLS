@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 html {
 	box-sizing: border-box;
@@ -75,11 +74,13 @@ main h1 {
     margin-top: 5vh;
 }
 
-#profile_image {
+#info-section {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 30vh;
-    height: 30vh;
+}
+
+#profile_image {
     border-radius: 90px;
     background-color: rgb(196, 196, 196);
     margin-left: 10vh;
@@ -134,7 +135,7 @@ main section {
 
 .star_votes {
     align-items: center;
-    font-family: 'Merriweather', serif;
+    font-family: 'Quicksand', serif;
     display: flex;
     margin-top: 1%;
     margin-left: 9%

@@ -37,3 +37,7 @@ function resetIndex()
   }
 
 }
+
+function goToProfile() {
+  window.location.replace("userpage.html")
+}
