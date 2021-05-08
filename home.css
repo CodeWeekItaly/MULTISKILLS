@@ -17,7 +17,9 @@ main {
 }
 
 main h2 {
-    font-size: 2em;
+    font-size: 3.5em;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .lighter-please {
@@ -68,18 +70,18 @@ main h2 {
 
 #closest-product {
     height: 100%;
-    transform: translateY(25px);
-    background-color: #dddddd;
+    
+    background-color: #F8F7F2;
     padding-bottom: 50px;
 }
 
 #closest-product h3 {
-    margin-left: calc(50% - 212px);
-    width: 400px;
-    padding: 12px;
-    color: white;
+    margin-left: calc(50% - 335px);
+    width: 575px;
+    padding: 12px 48px;
+    color: #8AC24A;
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.8em;
     background-color: #00294D;
     border-radius: 50px;
     transform: translateY(calc(-147.11px / 6));
@@ -95,7 +97,7 @@ main h2 {
 }
 
 #shopping-bag {
-    width: 280px;
+    width: 240px;
 }
 
 .product-card {

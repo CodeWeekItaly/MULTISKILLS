@@ -142,13 +142,21 @@ input[type=email]::placeholder {
     font-weight: 700;
 }
 
-#buyer-signup {
+#buyer-signup, #seller-signup, #user-login {
     font-family: 'Quicksand', sans-serif;
     background-image: linear-gradient(to right, #64A11E, #8AC24A);
     border: none;
     font-size: 20px;
     font-weight: 700 !important;
     margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+#user-log {
+    margin-bottom: 25px;
+}
+
+#user-login {
     margin-bottom: 25px;
 }
 
@@ -162,4 +170,5 @@ input[type=email]::placeholder {
     text-decoration: none;
     color: white;
     font-weight: 600;
+    margin-bottom: 25px !important;
 }

@@ -27,11 +27,11 @@
                 <span class="smaller-please">or</span>
                 <a id="sell" class="nice-button" href="#" onclick="sellerLog()">SELL</a>
 
-                <span id="is-signed-in">Already signed in? <a class="green-please" href="#"> Log in.</a></span> 
+                <span id="is-signed-in">Already signed in? <a class="green-please" href="#" onclick="userLog()"> Log in.</a></span> 
 
             </div>
 
-            <div id="register-buyer" class="hide">
+            <div id="register-buyer" class="sign-user hide">
                 <h3 class="green-please">Signin up on IOcommerce as a buyer</h3>
                 <form action="/">
                     <label for="buyer-fname">Your first name</label>
@@ -51,23 +51,36 @@
             </div>
 
             <div id="register-seller" class="sign-user hide">
-                <h3 class="green-please">Signing up on IOcommerce as a seller</h3>
-                <form action="/">
-                    <label for="buyer-fname">Your first name</label>
-                    <input type="text" name="buyer-fname" id="buyer-fname" placeholder="John">
-                    <label for="buyer-lname">Your last name</label>
-                    <input type="text" name="buyer-lname" id="buyer-lname" placeholder="Appleseed">
-                    <label for="buyer-email">Your e-mail</label>
-                    <input type="email" name="buyer-email" id="buyer-email" placeholder="john.appleseed@something.com">
-                    <label for="buyer-password">Your password</label>
-                    <input type="password" name="buyer-pasword" id="buyer-password" placeholder="I bet it could be 'password123'">
-                    <label for="buyer-city">Your city</label>
-                    <input type="text" name="buyer-city" id="buyer-city" placeholder="Milan">
-                    <button id="buyer-signup" class="nice-button">Register</button>
-                </form>
+              <h3 class="green-please">Signing up on IOcommerce as a seller</h3>
+              <form action="/">
+                  <label for="seller-fname">Your first name</label>
+                  <input type="text" name="seller-fname" id="seller-fname" placeholder="John">
+                  <label for="seller-lname">Your last name</label>
+                  <input type="text" name="seller-lname" id="seller-lname" placeholder="Appleseed">
+                  <label for="seller-email">Your e-mail</label>
+                  <input type="email" name="seller-email" id="seller-email" placeholder="john.appleseed@something.com">
+                  <label for="seller-password">Your password</label>
+                  <input type="password" name="seller-pasword" id="seller-password" placeholder="I bet it could be 'password123'">
+                  <label for="seller-city">Your city</label>
+                  <input type="text" name="seller-city" id="seller-city" placeholder="Milan">
+                  <button id="seller-signup" class="nice-button">Register</button>
+              </form>
 
-                <a id="back-previous-page" href="#" onclick="resetIndex()">&lt;&lt; Go back to previous page</a>
-            </div>
+              <a id="back-previous-page" href="#" onclick="resetIndex()">&lt;&lt; Go back to previous page</a>
+          </div>
+
+          <div id="user-log" class="sign-user hide">
+            <h3 class="green-please">Log in to IOcommerce</h3>
+            <form action="/">
+                <label for="user-email">Your e-mail</label>
+                <input type="email" name="buyer-email" id="buyer-email" placeholder="Email address">
+                <label for="user-password">Your password</label>
+                <input type="password" name="buyer-pasword" id="buyer-password" placeholder="Password">
+                <button id="user-login" class="nice-button">Log in</button>
+            </form>
+
+            <a id="back-previous-page" href="#" onclick="resetIndex()">&lt;&lt; Go back to previous page</a>
+        </div>
 
         </div>
       </main>
