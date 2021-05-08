@@ -1,40 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IOCommerce - Home</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOCommerce - Your profile</title>
     <link rel="stylesheet" href="userpagestyle.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="navbar">
-        <ul>
-            <li id="logo"><a href="#">IO<span class="lighter-please">commerce</span></a></li>
-            <li id="search-field"><input type="text" id="search-input" placeholder="Search for something..."></li>
-            <li id="icons">Carrello - Profilo</li>
-        </ul>
+      <ul>
+        <li id="logo">
+            <a href="home.html"><img width="150px" src="imgs/logo-white.png" alt="White logo"></a>
+        </li>
+        <li id="search-field">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for something..."
+          />
+        </li>
+        <li id="icons">
+          <a href="#">Cart</a> / <a href="userpage.html">Your profile</a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <h1>User Name</h1>
-        <section id="info-section">
-            <div id="profile_picture"></div>
-            <h6 class="profile_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus eu justo mollis dignissim. Morbi semper quis lorem ut eleifend. Duis tempus dui eu mollis auctor. In ullamcorper cursus lectus quis lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque accumsan orci turpis, et ornare dolor accumsan a. Aenean ligula turpis, pulvinar sed pellentesque quis, placerat id magna. Vivamus et felis elementum dolor sodales rutrum sed in leo. Phasellus eget efficitur odio. Ut et aliquet tellus. Sed vehicula, mi at feugiat pretium, orci enim venenatis nisl, id interdum ex nibh sit amet mi. Vestibulum lacus augue, rhoncus quis lacinia vel, fermentum vitae quam. In nec interdum risus.</h2>
-        </section>
-        <div class="star_votes">
+      <h2>Seller name</h2>
+      <section id="info-section">
+        <div class="profile-column">
+          <div id="profile_picture"></div>
+          <div class="star_votes">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
             <p>3/5</p>
+          </div>
         </div>
-        <div class="product_list">
-            <div class="prod_placeholder"></div>
-            <div class="prod_placeholder"></div>
-            <div class="prod_placeholder"></div>
+        <p class="profile_desc">
+          Here you can enter your own description! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sint, iste? Inventore sunt fugiat,
+          nostrum, ea delectus rerum nesciunt neque eius fugit architecto hic
+          repellendus incidunt, aliquid sint ex sequi praesentium! Quis,
+          eligendi. Provident magni fugiat quas eum dolores optio ipsum beatae
+          hic nesciunt, illo unde quam quidem. Hic nesciunt nulla minima, fugit
+          rem neque? Sit aspernatur ad odit laudantium cumque? Necessitatibus
+          vitae modi tenetur sint, a quaerat maxime dolore similique est
+          excepturi, id distinctio qui cumque perspiciatis velit possimus
+          molestiae enim? Odio omnis voluptatibus labore optio modi nemo. Ad,
+          nihil?
+        </p>
+      </section>
+
+      <div class="product-list">
+        <div class="product-card">
+            <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce">
+            <div class="product-title"><a href="#" onclick="goToProduct()">Tomato sauce</a></div>
+            <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
+            <div class="product-price">€2.00</div>
         </div>
+        <div class="product-card">
+          <img src="imgs/cherries-compote.jpg" alt="Compote of cherries" />
+          <div class="product-title">
+            <a href="#" onclick="goToProduct()">Compote of cherries</a>
+          </div>
+          <div class="vendita-by">
+            by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
+          </div>
+          <div class="product-price">€2.50</div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

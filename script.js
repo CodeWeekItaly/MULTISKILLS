@@ -38,6 +38,10 @@ function resetIndex()
 
 }
 
+function redirectHome() {
+  window.location.replace("home.html")
+}
+
 function goToProfile() {
   window.location.replace("userpage.html")
 }
