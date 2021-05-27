@@ -1,78 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IOCommerce - Home</title>
-    <link rel="stylesheet" href="home.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <ul>
-          <li id="logo">
-              <a href="home.html"><img width="150px" src="imgs/logo-white.png" alt="White logo"></a>
-          </li>
-          <li id="search-field">
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Search for something..."
-            />
-          </li>
-          <li id="icons">
-            <a href="#">Cart</a> / <a href="userpage.html">Your profile</a>
-          </li>
-        </ul>
-      </nav>
+      <ul>
+        <li id="logo">
+          <a href="home.html"
+            ><img width="150px" src="imgs/logo-white.png" alt="White logo"
+          /></a>
+        </li>
+        <li id="search-field">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for something..."
+          />
+        </li>
+        <li id="icons">
+          <a href="#">Cart</a> / <a href="userpage.html">Your profile</a>
+        </li>
+      </ul>
+    </nav>
     <main>
-        <h2>
-            buy from home, buy local
-        </h2>
-        <img id="shopping-bag" src="imgs/bag-img.png" alt="Shopping bag">
-        <div id="closest-product">
-            <h3 class="green-please">Closest products to you (in 5km)</h3>
-            <div id="closest-product-inner">
-                <div class="product-card">
-                    <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce">
-                    <div class="product-title"><a href="#" onclick="goToProduct()">Tomato sauce</a></div>
-                    <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
-                    <div class="product-price">€2.00</div>
-                </div>
-                <div class="product-card">
-                    <img src="imgs/cherries-compote.jpg" alt="Compote of cherries">
-                    <div class="product-title"><a href="#" onclick="goToProduct()">Compote of cherries</a></div>
-                    <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
-                    <div class="product-price">€2.50</div>
-                </div>
-                <div class="product-card">
-                  <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce">
-                  <div class="product-title"><a href="#" onclick="goToProduct()">Tomato sauce</a></div>
-                  <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
-                  <div class="product-price">€2.00</div>
-              </div>
-              <div class="product-card">
-                  <img src="imgs/cherries-compote.jpg" alt="Compote of cherries">
-                  <div class="product-title"><a href="#" onclick="goToProduct()">Compote of cherries</a></div>
-                  <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
-                  <div class="product-price">€2.50</div>
-              </div>
-              <div class="product-card">
-                <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce">
-                <div class="product-title"><a href="#" onclick="goToProduct()">Tomato sauce</a></div>
-                <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
-                <div class="product-price">€2.00</div>
+      <h2>buy from home, buy local</h2>
+      <img id="shopping-bag" src="imgs/bag-img.png" alt="Shopping bag" />
+      <div id="closest-product">
+        <h3 class="green-please">Closest products to you (in 5km)</h3>
+        <div id="closest-product-inner">
+          <div class="product-card">
+            <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce" />
+            <div class="product-title">
+              <a href="#" onclick="goToProduct()">Tomato sauce</a>
             </div>
-            <div class="product-card">
-                <img src="imgs/cherries-compote.jpg" alt="Compote of cherries">
-                <div class="product-title"><a href="#" onclick="goToProduct()">Compote of cherries</a></div>
-                <div class="vendita-by">by <a href="#" onclick="goToProfile()">The Tasty Traditions</a></div>
-                <div class="product-price">€2.50</div>
+            <div class="vendita-by">
+              by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
             </div>
+            <div class="product-price">€2.00</div>
+          </div>
+          <div class="product-card">
+            <img src="imgs/cherries-compote.jpg" alt="Compote of cherries" />
+            <div class="product-title">
+              <a href="#" onclick="goToProduct()">Compote of cherries</a>
             </div>
+            <div class="vendita-by">
+              by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
+            </div>
+            <div class="product-price">€2.50</div>
+          </div>
+          <div class="product-card">
+            <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce" />
+            <div class="product-title">
+              <a href="#" onclick="goToProduct()">Tomato sauce</a>
+            </div>
+            <div class="vendita-by">
+              by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
+            </div>
+            <div class="product-price">€2.00</div>
+          </div>
+          <div class="product-card">
+            <img src="imgs/cherries-compote.jpg" alt="Compote of cherries" />
+            <div class="product-title">
+              <a href="#" onclick="goToProduct()">Compote of cherries</a>
+            </div>
+            <div class="vendita-by">
+              by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
+            </div>
+            <div class="product-price">€2.50</div>
+          </div>
+          <div class="product-card">
+            <img src="imgs/tomato-sauce.jpg" alt="Tomato sauce" />
+            <div class="product-title">
+              <a href="#" onclick="goToProduct()">Tomato sauce</a>
+            </div>
+            <div class="vendita-by">
+              by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
+            </div>
+            <div class="product-price">€2.00</div>
+          </div>
+          <div class="product-card">
+            <img src="imgs/cherries-compote.jpg" alt="Compote of cherries" />
+            <div class="product-title">
+              <a href="#" onclick="goToProduct()">Compote of cherries</a>
+            </div>
+            <div class="vendita-by">
+              by <a href="#" onclick="goToProfile()">The Tasty Traditions</a>
+            </div>
+            <div class="product-price">€2.50</div>
+          </div>
         </div>
+      </div>
     </main>
 
-    <script src="script.js"></script>
-</body>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
