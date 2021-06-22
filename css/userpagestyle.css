@@ -24,47 +24,6 @@ main h2 {
     font-weight: 400;
 }
 
-.navbar {
-    position: sticky;
-    width: 100%;
-    background-color: #001425;
-    color: white;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 5px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar #icons {
-    float: right;
-    padding: 10px;
-}
-
-.navbar #logo {
-    color: #64A11E;
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-right: 50px;
-    padding: 10px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #64A11E;
-}
-
-.navbar input[type=text] {
-    border-radius: 50px;
-    border: none;
-    padding: 10px;
-    width: 450px;
-}
 
 main {
     text-align: center;
@@ -84,26 +43,6 @@ main h1 {
 #info-section p {
     font-size: 1.2em;
     margin: 15px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar #icons {
-    float: right;
-}
-
-.navbar #logo {
-    font-size: 1.5em;
-    margin-right: 50px;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
 }
 
 main h1 {
