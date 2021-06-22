@@ -36,16 +36,11 @@ main h2 {
 .navbar ul {
     list-style-type: none;
     margin: 0;
-    padding: 20px;
+    padding: 5px;
 }
 
 .navbar li {
     display: inline;
-}
-
-.navbar #icons {
-    float: right;
-    padding: 10px;
 }
 
 .navbar #logo {
@@ -73,7 +68,11 @@ main h2 {
 }
 
 .navbar #icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     float: right;
+    padding: 10px;
 }
 
 .navbar #logo {
