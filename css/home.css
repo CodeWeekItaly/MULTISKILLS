@@ -4,6 +4,26 @@ html {
 	box-sizing: border-box;
 	font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track
+{
+    border:7px solid rgba(226, 226, 226,0);
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #64a11e;
+}
+::-webkit-scrollbar-thumb:hover
+{
+    background-color: #588f1a;
 }
 
 body {
@@ -26,6 +46,10 @@ main h2 {
     font-weight: 400;
 }
 
+#search-input
+{
+    margin-right: 5.5rem;
+}
 
 #closest-product {
     height: 100%;
