@@ -1,4 +1,3 @@
-# # MULTISKILLS repository
 # IOcommerce - by MULTISKILLS
 ## for ITALY CodeWeek Hackathon 2021
 
