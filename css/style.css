@@ -1,62 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
 html {
-	box-sizing: border-box;
-	font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(56, 163, 165);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #57CC99;
 }
 
 body {
-    background-color: #FFFFFF;
-    margin: 0 0;
-    padding: 0 0;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: 'Lato', sans-serif;
+
+    background-color: #ffffff;
 }
 
-.navbar {
-    position: sticky;
+nav {
     width: 100%;
-    background-color: #001425;
-    color: white;
+    height: 8%;
+
+    justify-self: flex-start;
+
+    position: sticky;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 16px;
+
+    background-color: #a5d5d6;
 }
 
-.navbar #logo {
-    color: #64A11E;
-    font-weight: 700;
-    font-size: 1.5em;
-    margin-right: 50px;
-    padding: 10px;
+.navbar-links {
+    display: flex;
+    flex-direction: row;
 }
 
-.navbar a {
-    text-decoration: none;
-    color: #64A11E;
+.container {
+    margin-top: 25px;
 }
 
-.navbar input[type=text] {
+.navbar-logo img {
+    width: 175px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+.navbar-searchbox {
+    border-radius: 12px;
+    width: 40vw;
+    height: 48px;
+}
+
+.navbar-searchbox-submit {
+    width: 48px !important;
+    height: 48px !important;
+    background-color: #57CC99;
     border-radius: 50px;
     border: none;
-    padding: 10px;
-    width: 450px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar #icons {
-    float: right;
-    padding: 10px;
-}
-
-.navbar #logo {
-    font-size: 1.5em;
-    margin-right: 50px;
-}
-
-.navbar ul {
+    color: white;
+    transition: all 0.2s ease-in-out;
     display: flex;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: center;
     align-items: center;
-    list-style-type: none;
+}
+
+.navbar-searchbox-submit svg {
+    width: 75%;
+}
+
+.navbar-searchbox-submit:hover {
+    transform: rotate(45deg);
+}
+
+
+form button:hover {
+    box-shadow: 0px 0px 5px #0d6efd;
+    transform: scale(2px);
+}
+
+form input:hover {
+    box-shadow: 0px 0px 5px #0d6efd;
+}
+
+form .col {
+    padding: 2px;
+}
+
+.navbar-links svg {
+    color: rgb(56, 163, 165);
+    font-size: 24px;
+    transition: all 0.2s ease-in-out;
+    margin: 0 0 0 8px;
+}
+
+.navbar-links svg:hover {
+    color: #57CC99;
+    font-size: 24px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.logout-navbar {
+    color: red;
+    font-weight: 600;
+}
+
+.logout-navbar:hover {
+    color: red;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.dropdown-toggle::after {
+    color: rgb(56, 163, 165);
     margin: 0;
-    padding: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.dropdown-toggle::after:hover {
+    color: #57CC99;
+}
+
+.dropdown-menu {
+    padding: 4px;
+    border-radius: 18px;
+}
+
+.dropdown-item {
+    margin: 0;
+    padding: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgba(56, 163, 165, 0.45);
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #logo img {
+    width: 250px;
+    margin: 12px;
+}
+
+footer #useful-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer #useful-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+footer .payment-mark{
+    width: 48px;
+    height: auto;
+}
+
+footer #copyright{
+    margin-bottom: 12px;
+}
+
+footer hr {
+    width: 45%;
+    margin: 8px;
+}
+
+#phoneNavbar
+{
+    display: none;
+}
+
+#dropdown-phone-menu
+{
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .navbar-searchbox-submit svg
+    {
+        width: 65%;
+    }
+
+    .navbar-logo a img {
+        width: 150px;
+    }
+
+    #pcNavbar
+    {
+        display: none;
+    }
+
+    #phoneNavbar
+    {
+        display: flex;
+        align-items: center;
+        z-index:400;
+    }
+
+    .nav-menu
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-menu div
+    {
+        height: 4px;
+        width: 35px;
+        background-color: rgb(252, 252, 252);
+        margin-top: 7px;
+        transition: ease .2s;
+    }
+
+    .nav-menu:hover div
+    {
+        margin-top: 5px;
+    }
+
+    #dropdown-phone-menu
+    {
+        margin-top: -500px;
+        height: 220px;
+        width: 100%;
+        background-color: #eee;
+        position:absolute;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        box-shadow: 0px 10px 15px 0px rgba(128, 128, 128, 0.664);
+        transition: ease .6s;
+    }
+
+    .nav-searchbox
+    {
+        display: flex;
+    }
+
+    .navbar-searchbox
+    {
+        width: 280px;
+    }
+
+    .my-profile-drop-btn
+    {
+        margin-top: 20px;
+    }
+
+    .settings-drop-btn
+    {
+        margin-top: 20px;
+    }
+
+    .logout-drop-btn
+    {
+        margin-top: 20px;
+    }
+
+    a
+    {
+        text-decoration: none;
+        color: #227afc;
+    }
+}
+
+#accessibility-btns
+{
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 0 10px gray;
+    border-radius: 10px 0 0 10px;
+    height: 130px;
+    width: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top:50%;
+    z-index:1000;
+}
+
+#accessibility-btns div
+{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease .2s;
+    border-radius: 10px 0 0 10px;
+}
+
+#accessibility-btns div:hover
+{
+    background-color: rgb(204, 204, 204);
+
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.scale-text-max-p
+{
+    font-size: 150%;
+}
+
+.scale-text-max-h1
+{
+    font-size: 250%;
+}
+
+.scale-text-max-h3
+{
+    font-size: 350%;
 }

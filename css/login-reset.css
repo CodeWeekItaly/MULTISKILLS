@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    background-image: url(../img/backgrounds/background-login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+main {
+    min-height: 88vh;
+    width: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav {
+    height: 12vh;
+}
+.form-group {
+    margin-bottom: 4px;
+}
+
+#top-page-logo {
+    margin-top: 50px;
+    width: 250px;
+}
+#rlr-panel {
+    width: 680px;
+    height: 600px;
+    border-radius: 50px;
+    
+    background-color: rgba(56, 163, 165, 0.45);
+    transition: .1s ease;
+}
+#rlr-panel h2 {
+    margin-top: 50px;
+    font-size: 38px;
+    font-weight: 800;
+}
+#rlr-panel #register-heading {
+    margin-top: 50px;
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+#rlr-panel form {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+#rlr-panel #forgot-password {
+    text-align: right;
+    margin-top: 2px;
+}
+
+#rlr-panel #register-redirect {
+    text-align: center;
+    margin-top: 25px !important;
+}
+#rlr-panel #login-redirect {
+    text-align: center;
+    margin-bottom: 75px;
+}
+#login-redirect, #register-redirect {
+    margin-bottom: 18px;
+    margin-top: 20px;
+}
+#rlr-panel form button {
+    margin-top: 100px !important;
+    border-radius: 50px;
+    background-color: #57CC99;
+    border: #57CC99;
+    font-size: 24px;
+    font-weight: 600;
+    width: 175px;
+    transition: all 0.2s ease-in-out;
+}
+#rlr-panel form button:hover {
+    box-shadow: 0px 0px 5px #0d6efd;
+    transform: translateY(-4px);
+    transform: scale(2px);
+}
+#rlr-panel form input {
+    border-radius: 12px;
+}
+#rlr-panel form label {
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+#rlr-panel form input:hover {
+    box-shadow: 0px 0px 5px #0d6efd;
+}
+.alert {
+    width: 80%;
+    margin: auto auto;
+    border-radius: 12px;
+}
+.hidden {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+    main
+    {
+        margin-top: 30px !important;
+        justify-content:start;    
+    }
+
+    #rlr-panel {
+        margin-top: 50px;
+        width: 90vw;
+        height: 450px !important;
+        border-radius: 50px;
+        background-color: rgba(56, 163, 165, 0.45);
+    }
+    .rp-pass-lbl
+    {
+        text-align: center;
+        white-space: nowrap;
+    }
+    #rlr-panel form button {
+        margin: 0 auto;
+        margin-top: 30px !important;
+    }
+    #login-redirect {
+        margin-top: 0 !important;
+    }
+    #rlr-panel form {
+        margin-top: 40px !important;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 0px;
+    }
+}

@@ -1,8 +1,10 @@
 main {
-    width: 95%;
+    width: 90%;
 }
 
 .container {
+    margin-top: 25px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,14 +29,80 @@ main {
     z-index: 1;
 }
 
-#nearest-products {
-    width: 450px;
-}
+.seller-cards-container {
+    width: 95%;
 
-.products-container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
+
+    padding: 25px;
+    margin-bottom: 75px;
+
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.seller-cards-container a {
+    color: black;
+    text-decoration: none;
+}
+
+.seller-card {
+    width: 300px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50px;
+    box-shadow: 0 0 5px black;
+    margin-left: 18px;
+
+    transition: all .2s ease-in;
+}
+
+.seller-card:hover {
+    background-color: #57CC99;
+    color: white;
+}
+
+.seller-card-img img{
+    width: 200px;
+    height: 200px;
+
+    border-radius: 150px;
+    box-shadow: 0 0 5px black;
+
+    object-fit: fill;
+
+    margin-bottom: 15px;
+}
+
+.seller-card-info {
+    text-align: center;
+}
+
+.seller-card-info h4 {
+    font-weight: 600;
+}
+
+.seller-card-info p {
+    margin: 0px 48px;
+}
+
+.product-cards-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 
     width: 95%;
@@ -43,18 +111,9 @@ main {
     border-radius: 50px;
     border: 1px solid rgb(219, 219, 219);
     box-shadow: 0px 0px 14px 2px gray;
-
-    overflow-x: scroll;
 }
 
-#coming-soon {
-    width: 100%;
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-}
-
-.products-container a{
+.product-cards-container a{
     text-decoration: none;
     color: black;
 }
@@ -114,20 +173,11 @@ main {
 }
 
 @media only screen and (max-width: 767px) {
+    
     .product-card
     {
         width: 250px;
         height: 350px;
-    }
-
-    #nearest-products
-    {
-        width: 350px;
-    }
-
-    .container h1
-    {
-        text-align: center;
     }
 
 }

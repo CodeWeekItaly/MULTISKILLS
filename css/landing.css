@@ -1,0 +1,389 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    overflow: overlay;
+}
+
+nav {
+    height: 12vh;
+    width: 100%;
+    opacity: 0;
+}
+
+.navbar {
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../img/landing/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    width: 100%;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 88vh;
+
+    padding-top: 150px;
+}
+
+.hero-section img {
+    width: 480px;
+}
+
+.hero-section .slogan {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.access-section {
+    margin-top: 75px;
+}
+
+.btn {
+    border-radius: 50px;
+}
+
+#login-btn, #register-btn {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    width: 160px;
+    margin: 5px;
+}
+
+#login-btn {
+    background-color: #57CC99;
+}
+
+#register-btn {
+    background-color: #22577A;
+}
+
+.other-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    background-color: white;
+}
+
+
+#arrow-down {
+    animation: arrow-animation 1s ease-in-out alternate infinite !important;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    text-decoration: none;
+}
+
+.shape-divider {
+    width: 100%;
+    transform: rotate(180deg);
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.feature-highlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 980px;
+    min-height: 480px;
+    border-radius: 50px;
+}
+
+.below-feature-highlight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 980px;
+    min-height: 480px;
+    border-radius: 50px;
+}
+
+.image-sect, .text-sect {
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.image-sect {
+    width: 40%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 4px black;
+}
+
+.image-sect img {
+    width: 100%;
+    top: 150px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 46px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+
+.text-sect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 60%;
+    padding: 12px;
+}
+
+.text-sect h3 {
+    font-weight: 800;
+    font-size: 42px;
+}
+
+.text-sect p {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.smaller-text {
+    margin-top: 36px;
+    font-size: 14px !important;
+}
+
+.text-on-left {
+    border-radius: 50px 0px 0px 50px;
+    text-align: right;
+}
+
+.text-on-right {
+    border-radius: 0px 50px 50px 0px;
+    text-align: left;
+}
+
+.blank-space {
+    height: 50vh;
+    background-color: #FFF;
+}
+
+#author {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px black;
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes fadeOutOpacity {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes arrow-animation {
+    0% {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    100% {
+      margin-top: 25px;
+      margin-bottom: -25px;
+    }
+}
+
+#start-point
+{
+    position: absolute;
+    margin-bottom: 1000px;
+}
+
+#arrow-up
+{
+    background-color: #57CC99;
+    border-radius: 100px;
+    color:white;
+    transform: rotateX(180deg);
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #arrow-up
+    {
+        display: block;
+    }
+
+    body
+    {
+        overflow-x:hidden;
+    }
+
+    .feature-highlight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 980px;
+        min-height: 480px;
+        border-radius: 50px;
+        margin-bottom: 120px;
+    }
+
+    .below-feature-highlight {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    
+        width: 980px;
+        min-height: 480px;
+        border-radius: 50px;
+    }
+
+    .text-sect
+    {
+        text-align: center;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+
+    .text-sect h3
+    {
+        width: 75%;
+    }
+
+    .text-sect p
+    {
+        width: 60%;
+    }
+
+    .text-sect
+    {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+  }
+
+@media only screen and (max-width: 767px) {
+
+    body
+    {
+        overflow-x:hidden;
+    }
+
+    .feature-highlight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        width: 980px;
+        min-height: 480px;
+        border-radius: 50px;
+    }
+
+    .below-feature-highlight {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    
+        width: 980px;
+        min-height: 480px;
+        border-radius: 50px;
+    }
+
+    .slogan
+    {
+        font-size: 30px;
+    }
+
+    .text-sect
+    {
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-sect h3
+    {
+        width: 75%;
+    }
+
+    .text-sect p
+    {
+        width: 60%;
+    }
+
+    .navbar
+    {
+        display: none;
+    }
+    
+    .hero-section img {
+        width: 320px;
+    }
+
+    .image-sect {
+        width: 35%;
+        border-radius: 50px;
+        box-shadow: 0px 0px 4px black;
+    }
+
+    #author
+    {
+        display: none;
+    }
+
+    html, body {
+        overflow-x: hidden;
+      }
+  }

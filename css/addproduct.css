@@ -1,0 +1,20 @@
+.container {
+    width: 80%
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 4px;
+}
+
+.info-add {
+    text-align: center;
+    font-size: 14px;
+}
+
+form .btn {
+    width: 100%;
+}

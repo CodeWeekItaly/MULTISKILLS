@@ -1,0 +1,26 @@
+main {
+    width: 95%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.boxed-paragraph {
+    border: 1px solid black;
+    background-color: rgb(232, 232, 232);
+    border-radius: 18px;
+    margin: 25px;
+    padding: 25px;
+    text-align: justify;
+}
+
+h4 {
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+h5 {
+    margin-top: 25px;
+    font-weight: 600;
+}

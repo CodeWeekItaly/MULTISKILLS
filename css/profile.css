@@ -1,0 +1,258 @@
+main {
+    width: 95%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-specs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info h2 {
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.profile-image img{
+    border-radius: 150px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 4px black;
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+}
+
+.profile-description {
+    max-width: 580px;
+    margin-left: 8px;
+}
+
+.custom-heading {
+    width: 350px;
+
+    background-color: #57CC99;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+
+    border-radius: 50px;
+    padding: 4px;
+    margin-top: 30px;
+    text-shadow: 0 0 4px gray;
+    box-shadow: 0px 0px 14px 2px gray;
+
+    margin-bottom: -12px;
+    z-index: 1;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+
+    padding: 35px;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+}
+
+.products-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    height: 450px;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    margin: 15px;
+    overflow: hidden;
+
+    transition: all .15s linear;
+}
+
+.product-card:hover {
+    background-color: #57CC99;
+    color: white;
+}
+
+.product-card .product-card-img {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-card .product-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card .product-card-info {
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card .product-card-info h3 {
+    font-weight: 700;
+}
+
+.buyer-tag {
+    margin-left: 12px;
+    background-color: #22577A;
+    border-radius: 50px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 4px 8px;
+    box-shadow: 0px 0px 4px 2px gray;
+    text-shadow: 0 0 4px gray;
+}
+
+.seller-tag {
+    margin-left: 12px;
+    background-color: #57CC99;
+    border-radius: 50px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 4px 8px;
+    vertical-align: middle;
+    box-shadow: 0px 0px 4px 2px gray;
+    text-shadow: 0 0 4px gray;
+}
+
+#user-contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-button {
+    background-color: #22577A;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 25px;
+    margin: 4px;
+}
+
+.call-button:hover {
+    color: white;
+}
+
+.email-button {
+    background-color: #22577A;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 25px;
+    margin: 4px;
+}
+
+.email-button:hover {
+    color: white;
+}
+
+.ratings-container {
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    padding: 35px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    border-radius: 18px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.review a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.review svg {
+    color: #22577A;
+}
+
+.review-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.review-header > h4 + h3{
+    margin: 0;
+}
+
+.review-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+    
+    .profile-specs
+    {
+        flex-direction: column;
+    }
+    
+    .profile-description p {
+        text-align: center;
+    }
+    
+
+}

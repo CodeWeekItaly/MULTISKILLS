@@ -1,0 +1,401 @@
+main {
+    width: 95%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-header {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.propic {
+    width: 96px;
+    height: 96px;
+    margin-right: 12px;
+    border-radius: 150px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.propic img {
+    width: 100%;
+}
+
+.custom-heading {
+    width: 350px;
+
+    background-color: #57CC99;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+
+    border-radius: 50px;
+    padding: 4px;
+    margin-top: 30px;
+    text-shadow: 0 0 4px gray;
+    box-shadow: 0px 0px 14px 2px gray;
+
+    margin-bottom: -12px;
+    z-index: 1;
+}
+
+.seller-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    padding: 15px;
+
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    border-radius: 50px;
+}
+
+.sales-stats {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.inner-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+.inner-stats div{
+    margin: 0 18px;
+}
+
+.inner-stats span{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.new-orders-list {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.available-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+}
+
+.available-list table {
+    width: 650px;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 95%;
+
+    padding: 35px;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+}
+
+.products-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    height: 450px;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    background-color: #57CC99;
+    color: white;
+}
+
+.product-card .product-card-img {
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-card .product-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-card .product-card-info {
+    height: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card .product-card-info h3 {
+    font-weight: 700;
+}
+
+
+.add-product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 450px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 14px 2px gray;
+    margin: 15px;
+
+    background-color: #57CC99;
+    color: white;
+}
+
+.ratings-container {
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    padding: 35px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    border-radius: 18px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.review svg {
+    color: #22577A;
+}
+
+.review-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.review-header > h4 + h3{
+    margin: 0;
+}
+
+.review-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.review a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* ------------------------------ */
+
+.alert {
+    text-align: center;
+    margin-top: 15px;
+    width: 95%;
+}
+
+.processing-orders-container, .completed-orders-container {
+    width: 95%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+    padding: 35px;
+}
+
+.order-card {
+    width: 90%;
+    padding: 15px 25px;
+    margin: 15px;
+    border-radius: 50px;
+    border: 1px solid rgb(219, 219, 219);
+    box-shadow: 0px 0px 14px 2px gray;
+}
+
+.order-card .order-card-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.order-card .order-card-heading h4 {
+    font-weight: 600;
+}
+
+.check-completed-order {
+    color: green;
+    text-decoration: none;
+}
+
+.check-completed-order:hover {
+    color: green;
+    text-decoration: none;
+}
+
+.deny-order {
+    color: red;
+    text-decoration: none;
+}
+
+.deny-order:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.company-label {
+    background-color: #22577A;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+
+    border-radius: 50px;
+    padding: 8px;
+    text-shadow: 0 0 4px gray;
+    box-shadow: 0px 0px 14px 2px gray;
+    margin-left: 12px;
+}
+
+.user-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#send-invoice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1001;
+}
+
+.panel {
+    text-align: center;
+    background-color: #FFF;
+    border-radius: 12px;
+    padding: 35px;
+    width: 650px;
+}
+
+@media only screen and (max-width: 767px) {
+    .add-product-card
+    {
+        width: 250px;
+        height: 250px;
+    }
+
+    .available-list
+    {
+        overflow-x: scroll;
+    }
+
+    .product-card
+    {
+        width: 250px;
+        height: 350px;
+    }
+
+    .products-table
+    {
+        overflow-x: scroll;
+    }
+
+    .new-orders-list
+    {
+        width: 300px;
+    }
+
+    .propic
+    {
+        width: 96px;
+        height: auto;
+    }
+
+    .inner-stats
+    {
+        flex-direction: column;
+    }
+
+    .review-header
+    {
+        flex-direction: column;
+    }
+
+}
+
+.hidden {
+    display: none !important;
+}
